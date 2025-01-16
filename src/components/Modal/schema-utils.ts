@@ -1,3 +1,6 @@
+import { JSONSchema7 } from "json-schema";
+import { ValidationError } from "ajv";
+
 export function validateSchema(
   schema: JSONSchema7,
   data: any,
@@ -17,8 +20,8 @@ export function validateSchema(
   }
 
   if (schema.oneOf) {
-    const validSchemas = schema.oneOf.filter((subSchema) => {
-      const subErrors = validateSchema(subSchema as JSONSchema7, data, path);
+    const validSchemas = schema.oneOf.filter((subSchema: JSONSchema7) => {
+      const subErrors = validateSchema(subSchema, data, path);
       return subErrors.length === 0;
     });
 
