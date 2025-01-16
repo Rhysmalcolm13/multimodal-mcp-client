@@ -13,7 +13,8 @@
     "start": "npm run build && concurrently \"npm run proxy\" \"npm run preview\"",
     "test": "vitest run --reporter verbose > output/test-output.txt",
     "test:watch": "vitest watch",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "vercel": "vercel --prod"
   },
   "dependencies": {
     "@google/generative-ai": "^0.21.0",

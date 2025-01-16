@@ -57,3 +57,6 @@ coverage/
 # Scripts
 scripts/*
 scripts
+
+# Vercel
+.vercel

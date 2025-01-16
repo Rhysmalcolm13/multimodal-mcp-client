@@ -368,3 +368,16 @@ A specialized Model Context Protocol (MCP) server that integrates Google service
 - **Through MCP Client**: Use any MCP client to send commands to this server for Gmail and Calendar operations.
 
 For detailed setup and usage instructions, refer to the [systemprompt-mcp-google documentation](https://systemprompt.io/documentation).
+
+## Deployment to Vercel
+
+To deploy this project to Vercel, follow these steps:
+
+1. **Create a Vercel account**: Sign up for a Vercel account at [vercel.com](https://vercel.com) if you don't already have one. 📝
+2. **Install Vercel CLI**: Install the Vercel CLI globally on your machine using the command `npm install -g vercel`. 💻
+3. **Login to Vercel**: Log in to your Vercel account using the command `vercel login`. 🔑
+4. **Initialize Vercel**: In the root directory of your project, run `vercel` to initialize the project. Follow the prompts to set up your project. 📁
+5. **Configure environment variables**: Add your environment variables in the Vercel dashboard under the "Settings" tab for your project. Ensure you include any necessary API keys and configuration settings from your local `.env` files. 🔧
+6. **Deploy the project**: Run `vercel --prod` to deploy your project to Vercel. 🚀
+
+[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/Rhysmalcolm13/multimodal-mcp-client)
